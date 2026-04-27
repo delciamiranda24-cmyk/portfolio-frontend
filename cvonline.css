@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(140, 36, 140);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px; /* importante para separar imagem e texto */
+  padding: 2rem;
+  background-color: lavenderblush;
+}
+.header-img {
+  border-radius: 10%;
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  color: rgb(248, 231, 248);
+  font: size 1.2em;
+}
