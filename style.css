@@ -1,38 +1,33 @@
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
   background-color: rgb(68, 66, 66);
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   line-height: 1.6;
 }
 
 /* HEADER */
 header {
+  text-align: center;
   padding: 1.5rem;
   background-color: lavenderblush;
-  text-align: center;
 }
 
+/* IMAGEM BANNER (TOPO) */
 .header-img {
   width: 100%;
-  max-width: 900px;
-  height: auto;
-  object-fit: cover;
-  padding: 0.5rem;
-  border-radius: 10px;
-}
-
-/* IMAGENS GERAIS */
-img {
   max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 /* MAIN */
@@ -40,68 +35,83 @@ main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 /* SECTIONS */
 section {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 /* TITULOS */
+h1 {
+  color: rgb(64, 62, 62);
+  font-size: 2rem;
+}
+
 h2 {
   color: lightblue;
-  font-size: 1.3em;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+p {
+  margin-bottom: 10px;
 }
 
 /* INPUTS */
-input[type="radio"],
-input[type="checkbox"] {
-  accent-color: #232323;
-}
-
 input[type="text"],
 input[type="password"],
 input[type="date"],
-input[type="email"] {
+input[type="email"],
+input[type="file"],
+select {
   width: 100%;
   padding: 0.6rem;
-  border: 2px solid #232323;
+  border-radius: 5px;
+  border: none;
   outline: none;
+  margin-top: 5px;
+}
+
+/* RADIO E CHECKBOX */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+  accent-color: #232323;
+}
+
+/* FIGURA */
+.content-img {
+  width: 250px;
+  max-width: 100%;
   border-radius: 5px;
-  background-color: transparent;
+  margin: 10px 0;
 }
 
-input::placeholder {
-  color: rgb(146, 197, 243);
-}
-
-/* SELECT */
-select {
-  cursor: pointer;
-  background-color: #898787;
-  border-radius: 5px;
-  padding: 0.5rem;
-  width: 100%;
-}
-
-/* TABLE */
+/* TABELA */
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
 th,
 td {
   padding: 1rem;
   text-align: center;
-  color: #97c7eb;
 }
 
 th {
   background-color: #898787;
+  color: #97c7eb;
+}
+
+td {
+  color: #dcdfe0;
 }
 
 tfoot td {
@@ -111,23 +121,15 @@ tfoot td {
 /* DETAILS */
 details {
   background-color: #adafb0;
-  border-radius: 5px;
   padding: 1rem;
+  border-radius: 5px;
+  color: black;
 }
 
 summary {
-  color: #0e6072;
   cursor: pointer;
-}
-
-/* LISTAS */
-ol {
-  margin-left: 1.5rem;
-  color: #dcdfe0;
-}
-
-ol li {
-  padding: 0.2rem;
+  font-weight: bold;
+  color: #0e6072;
 }
 
 /* FIELDSET */
@@ -139,26 +141,25 @@ fieldset {
 
 legend {
   color: #379dea;
-  padding: 0 0.5rem;
 }
 
 /* TEXTAREA */
 textarea {
-  background-color: #cee6f8;
-  border: none;
-  outline: none;
+  width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
+  border: none;
 }
 
-/* BUTTON */
+/* BOTÃO */
 button {
-  border: none;
+  margin-top: 10px;
   padding: 0.8rem;
   background-color: #97c7eb;
-  color: #ffffff;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
 }
 
 /* FOOTER */
@@ -166,13 +167,21 @@ footer {
   background-color: rgb(240, 217, 240);
   padding: 2rem;
   text-align: center;
+  color: black;
 }
 
-.footer-p {
-  color: #97c7eb;
-}
-
-.footer-a {
+footer a {
   color: #379dea;
   text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .header-img {
+    height: 180px;
+  }
+
+  main {
+    padding: 1rem;
+  }
 }
