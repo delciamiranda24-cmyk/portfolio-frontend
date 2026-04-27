@@ -8,43 +8,41 @@
 /* BASE */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #1e1e1e;
+  background: #1c1c1c;
   color: #f5f5f5;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* HEADER */
 header {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 2rem;
+  gap: 25px;
+  padding: 3rem 2rem;
   background: linear-gradient(135deg, lavenderblush, #f3d6f3);
-  color: #333;
-  flex-wrap: wrap;
+  color: #222;
 }
 
-/* IMAGEM PERFIL */
+/* FOTO */
 .header-img {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 5px; /* como pediste */
+  border-radius: 5px;
+  border: 3px solid plum;
 }
 
 /* TEXTO HEADER */
-.header-text {
-  flex: 1;
-}
-
 header h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #222;
 }
 
 header p {
   max-width: 600px;
   font-size: 1rem;
+  color: #444;
 }
 
 /* MAIN */
@@ -57,13 +55,14 @@ main {
   gap: 2rem;
 }
 
-/* SECTIONS (cards modernos) */
+/* SECTIONS (CARDS MODERNOS) */
 section {
   background: #2a2a2a;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 12px;
-  border-left: 4px solid plum;
-  transition: transform 0.2s ease;
+  border-left: 5px solid plum;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.2s ease;
 }
 
 section:hover {
@@ -73,17 +72,19 @@ section:hover {
 /* TITULOS */
 h2 {
   color: plum;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
 }
 
 h3 {
   color: #ddd;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 /* LISTAS */
 ul {
   padding-left: 20px;
+  margin-top: 10px;
 }
 
 li {
@@ -106,6 +107,7 @@ footer {
   margin: 0 10px;
   color: plum;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-links a:hover {
@@ -120,12 +122,8 @@ footer {
   }
 
   .header-img {
-    width: 130px;
-    height: 130px;
-  }
-
-  header h1 {
-    font-size: 1.4rem;
+    width: 120px;
+    height: 120px;
   }
 
   main {
