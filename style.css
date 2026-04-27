@@ -1,47 +1,67 @@
 * {
-  margin: 1;
-  padding: 2;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(68, 66, 66);
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
+  line-height: 1.6;
 }
+
+/* HEADER */
 header {
   padding: 1.5rem;
   background-color: lavenderblush;
   text-align: center;
 }
+
 .header-img {
-  width: 1200px;
-  height: 250px;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
   object-fit: cover;
   padding: 0.5rem;
+  border-radius: 10px;
 }
-figure .content-img {
-  width: 300px;
+
+/* IMAGENS GERAIS */
+img {
+  max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
+
+/* MAIN */
 main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* SECTIONS */
 section {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
+
+/* TITULOS */
 h2 {
   color: lightblue;
-  font: size 1.2em;
+  font-size: 1.3em;
 }
+
+/* INPUTS */
 input[type="radio"],
 input[type="checkbox"] {
   accent-color: #232323;
 }
+
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -53,74 +73,85 @@ input[type="email"] {
   border-radius: 5px;
   background-color: transparent;
 }
+
 input::placeholder {
   color: rgb(146, 197, 243);
 }
+
+/* SELECT */
 select {
   cursor: pointer;
   background-color: #898787;
   border-radius: 5px;
-  padding: 1.5rem;
-  width: 9%;
+  padding: 0.5rem;
+  width: 100%;
 }
-img {
-  width: 5rem;
-  border-radius: 5px;
-}
+
+/* TABLE */
 table {
   width: 100%;
-  border-radius: 5px;
+  border-collapse: collapse;
 }
+
+th,
+td {
+  padding: 1rem;
+  text-align: center;
+  color: #97c7eb;
+}
+
 th {
   background-color: #898787;
-  padding: 1rem;
-  color: #97c7eb;
-  text-align: center;
 }
-td {
-  color: #97c7eb;
-  padding: 1rem;
-  text-align: center;
-}
+
 tfoot td {
   background-color: #525151;
-  padding: 1rem;
-  color: #97c7eb;
-  text-align: center;
 }
+
+/* DETAILS */
 details {
   background-color: #adafb0;
   border-radius: 5px;
   padding: 1rem;
 }
+
 summary {
   color: #0e6072;
-  margin: 0.5rem;
   cursor: pointer;
 }
+
+/* LISTAS */
 ol {
   margin-left: 1.5rem;
   color: #dcdfe0;
 }
+
 ol li {
   padding: 0.2rem;
 }
+
+/* FIELDSET */
 fieldset {
-  border: 0.5px solid #dcdfe0;
-  border-radius: 0.5%;
+  border: 1px solid #dcdfe0;
+  border-radius: 5px;
   padding: 1rem;
 }
+
 legend {
   color: #379dea;
   padding: 0 0.5rem;
 }
+
+/* TEXTAREA */
 textarea {
   background-color: #cee6f8;
-  border: #379dea;
+  border: none;
   outline: none;
-  text-align: center;
-  padding: 0.5px;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
+
+/* BUTTON */
 button {
   border: none;
   padding: 0.8rem;
@@ -129,15 +160,19 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* FOOTER */
 footer {
   background-color: rgb(240, 217, 240);
   padding: 2rem;
   text-align: center;
 }
+
 .footer-p {
   color: #97c7eb;
 }
+
 .footer-a {
-  text-decoration: #cee6f8;
   color: #379dea;
+  text-decoration: none;
 }
